@@ -2,7 +2,7 @@ import React from "react";
 import Item from "../model/Item";
 import PropTypes from "prop-types";
 
-class ShopItemFunc extends React.Component {
+class ShopItemClass extends React.Component {
 
     constructor(props) {
         super(props);
@@ -38,4 +38,4 @@ Item.propTypes = {
     item: PropTypes.instanceOf(Item).isRequired
 }
 
-export default ShopItemFunc;
+export default ShopItemClass;
