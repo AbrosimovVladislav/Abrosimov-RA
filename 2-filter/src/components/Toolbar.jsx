@@ -11,11 +11,11 @@ export default function Toolbar({filters, selected, onSelectFilter}) {
 
     return (
         <div>
-            {filters.map((filter,idx) =>
+            {filters.map((filter, idx) =>
                 <button
                     key={idx}
                     onClick={onSelectFilter}
-                    style= {selected===filter ? selectedStyle : {}}
+                    style={selected === filter ? selectedStyle : {}}
                 >{filter}</button>)
             }
         </div>
