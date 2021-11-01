@@ -3,9 +3,14 @@ import ShopCard from "./ShopCard";
 
 export default function CardsView({cards, visibility}) {
 
+    if (!visibility) {
+        return null;
+    }
+
     return (
-        <div className={"" + (!visibility ? "hidden" : "cards_view_container")}>
-            {cards.map((card,idx) => <ShopCard key={idx} card={card}/>)}
+        <div className={"cards_view_container"}>
+            {cards.map((card, idx) => <ShopCard key={idx} card={card}/>)}
         </div>
     )
+
 }

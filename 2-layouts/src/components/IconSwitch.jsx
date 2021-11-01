@@ -5,7 +5,7 @@ import ViewModule from '@material-ui/icons/ViewModule';
 export default function IconSwitch({icon,onSwitch}) {
 
     const availableIcons = ["view_list", "view_module"];
-    let iconView = <div/>;
+    let iconView;
 
     if (icon === availableIcons[0]){
         iconView = <ViewList onClick={onSwitch} className="view_list_icon"/>
@@ -14,7 +14,6 @@ export default function IconSwitch({icon,onSwitch}) {
     }
 
     return (
-
         <div className="icon_switch_container">
             {iconView}
         </div>
