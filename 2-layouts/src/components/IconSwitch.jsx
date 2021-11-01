@@ -7,9 +7,9 @@ export default function IconSwitch({icon,onSwitch}) {
     const availableIcons = ["view_list", "view_module"];
     let iconView;
 
-    if (icon === availableIcons[0]){
+    if (icon === availableIcons[1]){
         iconView = <ViewList onClick={onSwitch} className="view_list_icon"/>
-    } else if (icon === availableIcons[1]){
+    } else if (icon === availableIcons[0]){
         iconView = <ViewModule onClick={onSwitch} className="cards_view_icon"/>
     }
 
