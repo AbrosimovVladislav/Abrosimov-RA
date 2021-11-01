@@ -7,7 +7,7 @@ export default function ShopCard({card}) {
             <div className="name">{card.name}</div>
             <div className="color">{card.color}</div>
             <img src={card.img}/>
-            <div className="prise">${card.price}</div>
+            <div className="price">${card.price}</div>
         </div>
     )
 }
