@@ -69,13 +69,10 @@ export default function Portfolio() {
 
         setSelected(category);
 
-
         setProjects(originalProjects.filter(proj => proj.category === category))
         if (category === 'All') {
             setProjects(originalProjects);
         }
-
-
     }
 
     return (
