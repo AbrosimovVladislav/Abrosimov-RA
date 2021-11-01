@@ -41,11 +41,13 @@ export default function Store() {
 
     const [icon, setIcon] = useState("view_module");
 
+    console.log("Start of render " + icon);
+
     function onSwitch() {
         let oppositeToCurrentIcon = icon === availableIcons[0] ? availableIcons[1] : availableIcons[0];
+        console.log("oppositeToCurrentIcon = " + oppositeToCurrentIcon);
         setIcon(oppositeToCurrentIcon);
     }
-
 
     return (
         <div className="store_container">
