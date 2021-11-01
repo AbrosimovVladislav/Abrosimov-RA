@@ -48,7 +48,7 @@ export default function Store() {
 
 
     return (
-        <div>
+        <div className="store_container">
             <IconSwitch icon={icon} onSwitch={onSwitch}/>
             <CardsView visibility={icon === availableIcons[1]} cards={products}/>
             <ListView visibility={icon === availableIcons[0]} items={products}/>

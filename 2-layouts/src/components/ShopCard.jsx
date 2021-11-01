@@ -3,11 +3,11 @@ import React from "react";
 export default function ShopCard({card}) {
 
     return (
-        <div>
-            <h1>{card.name}</h1>
-            <h3>{card.price}</h3>
-            <p>{card.color}</p>
+        <div className="shop_card">
+            <div className="name">{card.name}</div>
+            <div className="color">{card.color}</div>
             <img src={card.img}/>
+            <div className="prise">${card.price}</div>
         </div>
     )
 }
