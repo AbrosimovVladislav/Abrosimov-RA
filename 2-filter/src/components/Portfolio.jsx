@@ -59,12 +59,12 @@ export default function Portfolio() {
 
     const [projects, setProjects] = useState(originalProjects);
     const [selected, setSelected] = useState('All');
+
     /**
      * Наверное правильнее будет сделать через if else для читабельности,
      * но учитывая что в функ компоненте выбирается всегда последний, данный вариант работает
      * */
     const onSelectFilter = (evt) => {
-        //todo вариант вытаскивания фильтра
         let category = evt.target.innerHTML;
 
         setSelected(category);
