@@ -1,0 +1,15 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap:wrap;
+  min-height: 100%;
+  img{
+    margin: 10px;
+    width: 250px;
+  }
+}
+.container_other{
+  background-color: red;
+}

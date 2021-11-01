@@ -6,13 +6,13 @@ export default function Toolbar({filters, selected, onSelectFilter}) {
 
     const selectedStyle = {
         color: 'white',
-        background: 'gray'
+        background: '#3d464d'
     };
 
     return (
         <div>
             {filters.map((filter, idx) =>
-                <button
+                <button className="button_categories"
                     key={idx}
                     onClick={onSelectFilter}
                     style={selected === filter ? selectedStyle : {}}

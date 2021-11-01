@@ -59,25 +59,27 @@ export default function Portfolio() {
 
     const [projects, setProjects] = useState(originalProjects);
     const [selected, setSelected] = useState('All');
-
     /**
      * Наверное правильнее будет сделать через if else для читабельности,
      * но учитывая что в функ компоненте выбирается всегда последний, данный вариант работает
      * */
     const onSelectFilter = (evt) => {
+        //todo вариант вытаскивания фильтра
         let category = evt.target.innerHTML;
 
         setSelected(category);
+
 
         setProjects(originalProjects.filter(proj => proj.category === category))
         if (category === 'All') {
             setProjects(originalProjects);
         }
 
+
     }
 
     return (
-        <div>
+        <div className="portfolio_container">
             <Toolbar
                 filters={["All", "Websites", "Flayers", "Business Cards"]}
                 selected={selected}
