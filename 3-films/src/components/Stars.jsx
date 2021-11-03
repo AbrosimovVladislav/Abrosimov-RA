@@ -16,8 +16,8 @@ export default function Stars({count = 0}) {
     }
 
     return (
-        <div>
-            <ul className="card-body-stars">
+        <div className="card-body-stars">
+            <ul>
                 {
                     arr.map(star => <Star ket={star}/>)
                 }
