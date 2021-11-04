@@ -4,8 +4,8 @@ import Stars from "./components/Stars";
 function App() {
 
   return (
-      <div>
-        <Stars count={6}/>
+      <div className="container">
+        <Stars count={4}/>
       </div>
   )
 }
