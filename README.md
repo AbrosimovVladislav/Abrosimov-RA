@@ -11,4 +11,9 @@
   - https://github.com/netology-code/ra16-homeworks/tree/master/events-state
   - https://github.com/AbrosimovVladislav/Abrosimov-RA/tree/main/2-filter
   - https://github.com/AbrosimovVladislav/Abrosimov-RA/tree/main/2-layouts
- 
+
+- 3-props
+
+  - https://github.com/netology-code/ra16-homeworks/tree/master/props
+  - https://github.com/AbrosimovVladislav/Abrosimov-RA/tree/main/3-films
+  - https://github.com/AbrosimovVladislav/Abrosimov-RA/tree/main/3-listing 
