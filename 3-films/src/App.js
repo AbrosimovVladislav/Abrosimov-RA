@@ -5,7 +5,7 @@ function App() {
 
   return (
       <div className="container">
-        <Stars count={4}/>
+        <Stars count={1}/>
       </div>
   )
 }

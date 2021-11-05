@@ -1,8 +1,6 @@
 import React from "react";
 
 export default function Listing({items}) {
-    console.log(items)
-    let quantityLvl = "level-low";
 
     return (
         items.map((item) =>
