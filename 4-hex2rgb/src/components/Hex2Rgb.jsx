@@ -2,22 +2,22 @@ import React from "react";
 
 export default function Hex2Rgb() {
 
-    const [form, setForm] = React.useState({hex: '', rgb: ''});
+    const [form, setForm] = React.useState({hex: '', rgb: '', showName: ''});
 
     const handleSubmit = (evt) => {
         evt.preventDefault();
-        console.log(form.hex)
     }
 
     const handleHexChange = (evt) => {
         setForm(prevForm => ({...prevForm, hex: evt.target.value}));
         if (form.hex.length === 6 && form.hex.search('#') === 0) {
-            console.log("InsideSetting")
             let rgbValues = hexToRgb(form.hex);
-            let colorValue = "rgb(" + rgbValues.r + ", " + rgbValues.g + ", " + rgbValues.b + ")";
-            setForm(prevForm => ({...prevForm, rgb: colorValue}));
-        } else {
-            setForm(prevForm => ({...prevForm, rgb: "Ошибка!"}))
+            if ("NaN" === rgbValues.r.toString() || "NaN" === rgbValues.g.toString() || "NaN" === rgbValues.b.toString()) {
+                setForm(prevForm => ({...prevForm, showName: "Ошибка!", rgb: "rgb(255, 17, 17)"}))
+            } else {
+                let colorValue = "rgb(" + rgbValues.r + ", " + rgbValues.g + ", " + rgbValues.b + ")";
+                setForm(prevForm => ({...prevForm, showName: colorValue, rgb: colorValue}));
+            }
         }
     }
 
@@ -36,7 +36,7 @@ export default function Hex2Rgb() {
         <div style={{background: form.rgb}}>
             <form onSubmit={handleSubmit}>
                 <input id="hex" name="hex" value={form.hex} onChange={handleHexChange}/>
-                <label>{form.rgb}</label>
+                <label>{form.showName}</label>
             </form>
         </div>
     )
