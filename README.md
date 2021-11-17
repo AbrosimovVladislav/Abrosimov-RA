@@ -17,3 +17,9 @@
   - https://github.com/netology-code/ra16-homeworks/tree/master/props
   - https://github.com/AbrosimovVladislav/Abrosimov-RA/tree/main/3-films
   - https://github.com/AbrosimovVladislav/Abrosimov-RA/tree/main/3-listing 
+ 
+ - 4-forms
+
+  - https://github.com/netology-code/ra16-homeworks/tree/master/forms
+  - https://github.com/AbrosimovVladislav/Abrosimov-RA/tree/main/4-hex2rgb
+  - https://github.com/AbrosimovVladislav/Abrosimov-RA/tree/main/4-steps 
