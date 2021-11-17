@@ -1,0 +1,37 @@
+.form_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-top: 100px;
+  input{
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid black;
+    margin-right: 5px;
+    font-size: 15px;
+  }
+  button{
+    width: 60px;
+    height: 46px;
+    border-radius: 5px;
+    border: 2px solid black;
+    margin-top: 20px;
+  }
+  .date_text, .km_text{
+    margin-bottom: 10px;
+  }
+  .date_container {
+    display: flex;
+    flex-direction: column;
+  }
+  .km_container {
+    display: flex;
+    flex-direction: column;
+  }
+  .accept_container{
+    display: flex;
+    flex-direction: column;
+  }
+}
