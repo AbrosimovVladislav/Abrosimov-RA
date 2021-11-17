@@ -10,7 +10,8 @@ export default function Hex2Rgb() {
 
     const handleHexChange = (evt) => {
         setForm(prevForm => ({...prevForm, hex: evt.target.value}));
-        if (form.hex.length === 6 && form.hex.search('#') === 0) {
+        if (form.hex.length === 7 && form.hex.search('#') === 0) {
+            console.log(form.hex.length)
             let rgbValues = hexToRgb(form.hex);
             if ("NaN" === rgbValues.r.toString() || "NaN" === rgbValues.g.toString() || "NaN" === rgbValues.b.toString()) {
                 setForm(prevForm => ({...prevForm, showName: "Ошибка!", rgb: "rgb(255, 17, 17)"}))
