@@ -12,7 +12,6 @@ function App() {
     const onDeleteClick = (evt) => {
         const id = evt.target.name;
         let arr = records.filter(rec => rec.id != id);
-        console.log(arr)
         setRecords(arr);
     }
 

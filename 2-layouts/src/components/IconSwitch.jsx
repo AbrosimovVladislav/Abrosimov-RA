@@ -2,17 +2,14 @@ import React from "react";
 import ViewList from '@material-ui/icons/ViewList';
 import ViewModule from '@material-ui/icons/ViewModule';
 
-export default function IconSwitch({icon,onSwitch}) {
+export default function IconSwitch({icon, onSwitch}) {
 
-    const availableIcons = ["view_list", "view_module"];
-    let iconView;
+    const viewOptions = new Map();
+    //Здесь не могу не передавать className внутрь компонента, тк это не мой компонент а иконка @material-ui
+    viewOptions.set("view_list", <ViewList onClick={onSwitch} className="view_list_icon"/>);
+    viewOptions.set("view_module", <ViewModule onClick={onSwitch} className="cards_view_icon"/>);
 
-    if (icon === availableIcons[1]){
-        iconView = <ViewList onClick={onSwitch} className="view_list_icon"/>
-    } else if (icon === availableIcons[0]){
-        iconView = <ViewModule onClick={onSwitch} className="cards_view_icon"/>
-    }
-
+    let iconView = viewOptions.get(icon);
     return (
         <div className="icon_switch_container">
             {iconView}
