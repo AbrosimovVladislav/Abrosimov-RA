@@ -1,12 +1,12 @@
 # Abrosimov Vladislav HomeWork repo
 
-- 1-components 
+- _1-components (accepted)_
   
   - https://github.com/netology-code/ra16-homeworks/tree/master/components
   - https://github.com/AbrosimovVladislav/Abrosimov-RA/tree/main/1-components-func
   - https://github.com/AbrosimovVladislav/Abrosimov-RA/tree/main/1-components-class
 
-- 2-events-state
+- _2-events-state (accepted)_
 
   - https://github.com/netology-code/ra16-homeworks/tree/master/events-state
   - https://github.com/AbrosimovVladislav/Abrosimov-RA/tree/main/2-filter
