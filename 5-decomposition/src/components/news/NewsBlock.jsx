@@ -1,8 +1,11 @@
 import React from "react";
-import News from "./News";
-import Stonks from "./Stonks";
-import Interesting from "./Interesting";
+import News from "./news/News";
+import Stonks from "./stonks/Stonks";
+import Interesting from "./interesting/Interesting";
 
+/**
+ * Блок с новостями, акциями и рекламным местом под интересное
+ * */
 export default function NewsBlock() {
 
     return (

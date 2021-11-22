@@ -6,7 +6,6 @@ export default function SearchBlock() {
 
     return (
         <div>
-
             <YandexServices/>
             <Search/>
         </div>

@@ -4,6 +4,7 @@ export default function YandexServices() {
 
     return (
         <div>
+            {}
         </div>
     )
 }
