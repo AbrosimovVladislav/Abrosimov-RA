@@ -23,3 +23,9 @@
   - https://github.com/netology-code/ra16-homeworks/tree/master/forms
   - https://github.com/AbrosimovVladislav/Abrosimov-RA/tree/main/4-hex2rgb
   - https://github.com/AbrosimovVladislav/Abrosimov-RA/tree/main/4-steps
+
+- 5-composition
+
+  - https://github.com/netology-code/ra16-homeworks/tree/master/composition
+  - https://github.com/AbrosimovVladislav/Abrosimov-RA/tree/main/5-cards
+  - https://github.com/AbrosimovVladislav/Abrosimov-RA/tree/main/5-decomposition
