@@ -9,7 +9,7 @@ export default function CardsView({cards, visibility}) {
 
     return (
         <div className={"cards_view_container"}>
-            {cards.map((card, idx) => <ShopCard key={idx} card={card}/>)}
+            {cards.map((card) => <ShopCard key={Math.random()} card={card}/>)}
         </div>
     )
 

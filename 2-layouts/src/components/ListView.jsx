@@ -9,7 +9,7 @@ export default function ListView({items, visibility}) {
 
     return (
         <div className={"list_view_container"}>
-            {items.map((item, idx) => <ShopItem key={idx} item={item}/>)}
+            {items.map((item) => <ShopItem key={Math.random()} item={item}/>)}
         </div>
     )
 }
