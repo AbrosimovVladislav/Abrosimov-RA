@@ -12,7 +12,7 @@
   - https://github.com/AbrosimovVladislav/Abrosimov-RA/tree/main/2-filter
   - https://github.com/AbrosimovVladislav/Abrosimov-RA/tree/main/2-layouts
 
--  _3-props (accepted)_
+- _3-props (accepted)_
 
   - https://github.com/netology-code/ra16-homeworks/tree/master/props
   - https://github.com/AbrosimovVladislav/Abrosimov-RA/tree/main/3-films
