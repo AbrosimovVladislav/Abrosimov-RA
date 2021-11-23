@@ -1,0 +1,12 @@
+.banner_container{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: url("../accets/banner.jpg") no-repeat;
+  width: 1000px;
+  height: 150px;
+  margin-top: 20px;
+  button{
+    background-color: red;
+  }
+}

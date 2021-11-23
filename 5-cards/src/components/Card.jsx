@@ -1,13 +1,11 @@
 import React from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Card({children,title,text,link}) {
 
-    let styleVar = {
-        width: "18rem"
-    }
 
     return (
-        <div className="card" style={styleVar}>
+        <div className="card">
             {children}
                 <div className="card-body">
                     <h5 className="card-title">{title}</h5>
