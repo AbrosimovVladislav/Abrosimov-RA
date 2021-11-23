@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../accets/logo.png";
 /**
- * Компонент отвечает сылку на работу над ошибками.
+ * Компонент отвечает сcылку на работу над ошибками.
  */
 
 export default function ErrorWork() {
