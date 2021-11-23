@@ -18,7 +18,6 @@ function App() {
             <Card {...card1}
                   title="Special title treatment"
                   text="With supporting text below as a natural lead-in to additional content.">
-                <img src={pic} className="card-img-top" alt="..."/>
             </Card>
         </div>
     )
