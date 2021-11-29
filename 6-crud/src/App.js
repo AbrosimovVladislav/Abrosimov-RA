@@ -13,14 +13,11 @@ function App() {
     React.useEffect(() => {
         fetch(baseUrl + getNotesUrl)
             .then(response => response.json())
-            .then(notes => {
-                console.log(notes)
-                setCards(notes)
-            })
+            .then(notes => setCards(notes))
     }, [])
 
     return (
-        <div>
+        <div className="crud_container">
             <Title/>
             <CardList baseUrl={baseUrl} cards={cards}/>
             <NoteInput baseUrl={baseUrl}/>

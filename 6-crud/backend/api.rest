@@ -8,10 +8,10 @@ POST http://localhost:7777/notes
 Content-Type: application/json
 
 {
-    "id": 0,
+    "id": 1,
     "content": "First Note"
 }
 
 ###
 
-DELETE http://localhost:7777/notes/7
+DELETE http://localhost:7777/notes/1

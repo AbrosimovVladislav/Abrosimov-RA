@@ -28,18 +28,14 @@ export default function NoteInput({baseUrl}) {
     }
 
     return (
-        <div>
+        <div className="noteInput_container">
             <form onSubmit={handleSubmit}>
-                <div className="form_container">
-                    <div className="km_container">
-                        <div>New note</div>
+                <div>New note</div>
+                    <div className="node_title_input_container">
                         <input id="noteInput" name="noteInput" value={noteText.content}
                                onChange={onNoteTextChange}/>
-                    </div>
-                    <div className="accept_container">
                         <button type="submit">Add</button>
                     </div>
-                </div>
             </form>
         </div>
     )
