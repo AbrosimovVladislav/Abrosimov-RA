@@ -1,0 +1,15 @@
+.noteInput_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  .node_title_input_container{
+    display: flex;
+    flex-direction: row;
+    input{
+      width: 200px;
+      height: 30px;
+    }
+  }
+}

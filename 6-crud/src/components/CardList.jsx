@@ -6,7 +6,7 @@ export default function CardList({cards, baseUrl}) {
     const deleteNoteUrl = "/notes/";
 
     const onDeleteCLick = (evt) => {
-        fetch(baseUrl + deleteNoteUrl + evt.target.name, {
+        fetch(baseUrl + deleteNoteUrl + evt.target.id, {
             method: 'DELETE'
         })
             .then(response => response.json())
@@ -14,11 +14,11 @@ export default function CardList({cards, baseUrl}) {
     }
 
     return (
-        <div>
+        <div className="cardList_container">
             {cards.map(card =>
-                <div>
+                <div className="card_container">
                     <Card key={card.id} card={card.content}/>
-                    <button name={card.id} onClick={onDeleteCLick}>X</button>
+                    <button id={card.id} onClick={onDeleteCLick}>X</button>
                 </div>
             )}
         </div>

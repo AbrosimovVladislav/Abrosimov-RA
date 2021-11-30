@@ -7,8 +7,8 @@ export default function Title() {
     }
 
     return (
-        <div>
-            <h1>Notes</h1>
+        <div className="title_container">
+            <div className="title">Notes</div>
             <button onClick={onClick}>Refresh</button>
         </div>
     )
