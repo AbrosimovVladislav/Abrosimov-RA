@@ -29,3 +29,9 @@
   - https://github.com/netology-code/ra16-homeworks/tree/master/composition
   - https://github.com/AbrosimovVladislav/Abrosimov-RA/tree/main/5-cards
   - https://github.com/AbrosimovVladislav/Abrosimov-RA/tree/main/5-decomposition
+
+- 6-lifecycle-http
+
+  - https://github.com/netology-code/ra16-homeworks/tree/master/lifecycle-http
+  - https://github.com/AbrosimovVladislav/Abrosimov-RA/tree/main/6-crud
+  - https://github.com/AbrosimovVladislav/Abrosimov-RA/tree/main/6-watches
