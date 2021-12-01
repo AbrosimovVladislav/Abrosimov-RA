@@ -17,12 +17,19 @@ function App() {
         setInputClockTimeZone(parseInt(evt.target.value))
     }
 
+    const onDeleteClick = (evt) => {
+        let tempArr = clocks;
+        tempArr = tempArr.filter(clock => clock.name !== evt.target.name)
+        setClocks(tempArr)
+    }
+
     const handleSubmit = (evt) => {
         evt.preventDefault();
         let tempArr = clocks;
         tempArr.push({name: inputClockName, timezone: inputClockTimeZone})
         setClocks(tempArr)
-        //Не понимаю почему setClocks не вызывает рередера??????????
+        console.log(clocks)
+        //Не понимаю почему setClocks не вызывает ререндера??????????
         //Из за этого скидываю значения инпутформ стейтов
         setInputClockName("")
         setInputClockTimeZone(0)
@@ -36,7 +43,7 @@ function App() {
                 inputClockTimeZone={inputClockTimeZone}
                 onInputClockNameChange={onInputClockNameChange}
                 onInputClockTimeZoneChange={onInputClockTimeZoneChange}/>
-            <Clocks clocks={clocks}/>
+            <Clocks clocks={clocks} onDeleteClick={onDeleteClick}/>
         </div>
     )
 }

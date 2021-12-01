@@ -1,11 +1,15 @@
 import React, {useEffect} from "react";
 
-export default function Clock({clock}) {
+export default function Clock({clock, onDeleteClick}) {
     const [currentTime, setCurrentTime] = React.useState("" + new Date().getHours() + ":" + new Date().getMinutes() + ":" + new Date().getSeconds());
     let timeout;
 
     useEffect(() => {
         calculateTime()
+
+        return () => {
+            window.clearTimeout(timeout)
+        }
     }, [])
 
     useEffect(() => {
@@ -46,6 +50,7 @@ export default function Clock({clock}) {
         <div>
             <h2>{clock.name}</h2>
             <h3>{currentTime}</h3>
+            <button name={clock.name} onClick={onDeleteClick}>X</button>
         </div>
     )
 }
