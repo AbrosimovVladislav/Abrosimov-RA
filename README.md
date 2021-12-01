@@ -18,13 +18,13 @@
   - https://github.com/AbrosimovVladislav/Abrosimov-RA/tree/main/3-films
   - https://github.com/AbrosimovVladislav/Abrosimov-RA/tree/main/3-listing 
 
-- 4-forms
+- _4-forms (accepted)_
 
   - https://github.com/netology-code/ra16-homeworks/tree/master/forms
   - https://github.com/AbrosimovVladislav/Abrosimov-RA/tree/main/4-hex2rgb
   - https://github.com/AbrosimovVladislav/Abrosimov-RA/tree/main/4-steps
 
-- 5-composition
+- _5-composition (accepted)_
 
   - https://github.com/netology-code/ra16-homeworks/tree/master/composition
   - https://github.com/AbrosimovVladislav/Abrosimov-RA/tree/main/5-cards
