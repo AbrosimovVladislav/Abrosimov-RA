@@ -12,9 +12,7 @@ function App() {
     useEffect(() => {
         fetch(url)
             .then(response => response.json())
-            .then(json => {
-                console.log(json)
-                return setListData(json)})
+            .then(json => setListData(json))
     }, [])
 
     const onUserClick = (evt) => {
