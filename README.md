@@ -35,3 +35,9 @@
   - https://github.com/netology-code/ra16-homeworks/tree/master/lifecycle-http
   - https://github.com/AbrosimovVladislav/Abrosimov-RA/tree/main/6-crud
   - https://github.com/AbrosimovVladislav/Abrosimov-RA/tree/main/6-watches
+
+- 7-hooks-context
+
+  - https://github.com/netology-code/ra16-homeworks/tree/master/hooks-context
+  - https://github.com/AbrosimovVladislav/Abrosimov-RA/tree/main/7-use-effect
+  - https://github.com/AbrosimovVladislav/Abrosimov-RA/tree/main/7-use-json-fetch
