@@ -38,7 +38,7 @@
 
 - _7-HOC (not ready)_
 
-  - https://github.com
+  - https://github.com/netology-code/ra16-homeworks/tree/master/hoc
   - https://github.com
   - https://github.com
 
@@ -50,7 +50,7 @@
   
 - _9-react-router_
 
-  - https://github.com/netology-code/ra16-homeworks/tree/master/hooks-context
+  - https://github.com/netology-code/ra16-homeworks/tree/master/router
   - https://github.com/AbrosimovVladislav/Abrosimov-RA/tree/main/9-router-crud
   - https://github.com/AbrosimovVladislav/Abrosimov-RA/tree/main/9-router-menu
 
