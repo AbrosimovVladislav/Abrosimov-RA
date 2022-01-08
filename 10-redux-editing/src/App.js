@@ -20,6 +20,8 @@ function App() {
     const [editing, setEditing] = useState(false);
 
     const onEditCancelHandler = (evt) => {
+        evt.preventDefault()
+        console.log("onEditCancelHandler")
         setForm({id: null, text: "", price: ""})
         setEditing(false)
     }
@@ -38,6 +40,7 @@ function App() {
 
     const onUpdateHandler = (evt) => {
         evt.preventDefault();
+        console.log("onUpdateHandler")
         const selected = list.find(el => el.id == form.id);
         const selectedIndex = list.indexOf(selected);
         const arr = list;
@@ -56,6 +59,7 @@ function App() {
     }
 
     const onSaveHandler = (evt) => {
+        console.log("onSaveHandler")
         evt.preventDefault()
         const arr = list;
         arr.push({id: Math.random(), text: form.text, price: form.price})
