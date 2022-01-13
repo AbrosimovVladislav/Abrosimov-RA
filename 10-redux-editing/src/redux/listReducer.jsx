@@ -22,7 +22,6 @@ export default function listReducer(state = initialState, action) {
             const arr = [...state.items]
             arr[editingItemIndex] = {id: id, name: name, price: price}
             const resultState = {...state, items: arr}
-            console.log(resultState)
             return resultState;
         default :
             return state;
