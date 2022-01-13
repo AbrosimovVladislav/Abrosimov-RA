@@ -23,6 +23,7 @@ export default function ServiceAdd() {
             dispatch({type:'FINISH_EDITING'})
         } else {
             dispatch({type: 'ADD_ITEM', payload: {name: name, price: price}})
+            dispatch({type:'FINISH_EDITING'})
         }
     }
 
