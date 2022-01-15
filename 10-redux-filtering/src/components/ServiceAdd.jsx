@@ -1,19 +1,31 @@
-import React, {useState} from "react";
+import React from "react";
 import {useDispatch, useSelector} from "react-redux";
 
-export default function ServiceAdd({handleAdd}) {
+export default function ServiceAdd() {
 
     const dispatch = useDispatch()
-    const {name, price} = useSelector(store => store.formReducer)
+    const {id, name, price, isEditing} = useSelector(store => store.formReducer)
 
     const handleChange = (evt) => {
         const {name, value} = evt.target;
         dispatch({type: 'CHANGE_FORM_VALUES', payload: {fieldName: name, fieldValue: value}})
     }
 
+    const handleEditCancelling = (evt) => {
+        evt.preventDefault()
+        dispatch({type:'FINISH_EDITING'})
+    }
+
     const handleSubmit = (evt) => {
         evt.preventDefault()
-        dispatch({type: 'ADD_ITEM', payload: {name: name, price: price}})
+        if (isEditing) {
+            dispatch({type: 'EDIT_ITEM', payload: {id: id, name: name, price: price}})
+            dispatch({type:'FINISH_EDITING'})
+        } else {
+            dispatch({type: 'ADD_ITEM', payload: {name: name, price: price}})
+            dispatch({type:'FINISH_EDITING'})
+            dispatch({type:'SYNC_FILTERED_ITEMS'})
+        }
     }
 
     return (
@@ -29,6 +41,7 @@ export default function ServiceAdd({handleAdd}) {
                 value={price}
             />
             <button type="submit">save</button>
+            <button onClick={handleEditCancelling} hidden={!isEditing}>cancel</button>
         </form>
     )
 }
