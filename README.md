@@ -54,3 +54,9 @@
   - https://github.com/AbrosimovVladislav/Abrosimov-RA/tree/main/9-router-crud
   - https://github.com/AbrosimovVladislav/Abrosimov-RA/tree/main/9-router-menu
 
+- _10-redux_
+
+  - https://github.com/netology-code/ra16-homeworks/tree/master/redux
+  - https://github.com/AbrosimovVladislav/Abrosimov-RA/tree/main/10-redux-editing
+  - https://github.com/AbrosimovVladislav/Abrosimov-RA/tree/main/10-redux-filtering
+
