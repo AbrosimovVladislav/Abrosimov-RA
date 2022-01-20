@@ -60,3 +60,7 @@
   - https://github.com/AbrosimovVladislav/Abrosimov-RA/tree/main/10-redux-editing
   - https://github.com/AbrosimovVladislav/Abrosimov-RA/tree/main/10-redux-filtering
 
+- _11-redux-thunk_
+
+  - https://github.com/netology-code/ra16-homeworks/tree/master/thunk
+  - https://github.com/AbrosimovVladislav/Abrosimov-RA/tree/main/11-thunk-api-redux
